@@ -1,0 +1,2 @@
+If generic array creation were legal, then compiler generated casts would correct the program at compile time but it can fail at runtime, which violates the core fundamental system of generic types.
+you need to understand that Java arrays are covariant but Java generics are not: that is, \mathtt{String[]}String[] is a subtype of \mathtt{Object[]}Object[], but \mathtt{Stack<String>}Stack<String> is not a subtype of \mathtt{Stack<Object>}Stack<Object>.
